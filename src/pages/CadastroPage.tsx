@@ -1,20 +1,18 @@
 import React from 'react';
-import { UserPlus } from 'lucide-react';
+import GuiaLayout from '@/components/layout/GuiaLayout';
+import ContratanteLayout from '@/components/layout/ContratanteLayout';
+import  ContratadoLayout  from '@/components/layout/ContratadoLayout';
+import ConfigModelLayout from '@/components/layout/ConfigModelLayout';
+import InstrucaoLayout from '@/components/layout/InstrucaoLayout';
 
 const CadastroPage: React.FC = () => {
   return (
     <div className="space-y-6">
-      {/* Placeholder */}
-      <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-8">
-        <div className="text-center">
-          <div className="w-24 h-24 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <UserPlus className="w-12 h-12 text-slate-400" />
-          </div>
-          <h3 className="text-lg font-medium text-slate-800 mb-2">
-            Formulário de Cadastro
-          </h3>
-        </div>
-      </div>
+      <GuiaLayout />
+      <ContratanteLayout />
+      <ContratadoLayout />
+      <ConfigModelLayout />
+      <InstrucaoLayout /> 
     </div>
   );
 };
