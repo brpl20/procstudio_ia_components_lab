@@ -75,7 +75,7 @@ function ContratadoLayout() {
                                     <Button
                                         variant="outline"
                                         size="sm"
-                                        className="text-[#B5192B] text-[16px] border-[#B5192B] hover:bg-red-50 hover:text-red-600 h-[40px] w-[170px]"
+                                        className="text-[#B5192B] text-[16px] border-[#B5192B] hover:bg-red-50 hover:text-red-600 px-3 py-5"
                                         onClick={() => removeParty(index)}
                                     >
                                         <img
@@ -90,10 +90,10 @@ function ContratadoLayout() {
                             </div>
 
                             <Tabs defaultValue="pessoa-fisica" className="mb-6">
-                                <TabsList className="w-full grid grid-cols-2 mb-6">
+                                <TabsList className='border-b-2 border-gray-200 mb-4'>
                                     <TabsTrigger
                                         value="pessoa-fisica"
-                                        className="data-[state=active]:border-b-2 data-[state=active]:border-blue-500"
+                                        className="data-[state=active]:border-b-2 data-[state=active]:border-blue-500 mr-6"
                                     >
                                         Pessoa física
                                     </TabsTrigger>
@@ -101,7 +101,6 @@ function ContratadoLayout() {
                                         Pessoa jurídica
                                     </TabsTrigger>
                                 </TabsList>
-
                                 {/*Começo Pessoa Fisica*/}
                                 <TabsContent value="pessoa-fisica" className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:col-span-2">
@@ -400,7 +399,7 @@ function ContratadoLayout() {
                                 </TabsContent>
                             </Tabs>
                             <div className="flex justify-end">
-                                <Button variant="outline" onClick={addParty} className="border-[#0277EE] border-[1.6px] text-[#0277EE] text-[16px] font-semibold hover:bg-blue-50 hover:text-blue-600 h-[40px] w-[176px]">
+                                <Button variant="outline" onClick={addParty} className="border-[#0277EE] border-[1.6px] text-[#0277EE] text-[16px] font-semibold hover:bg-blue-50 hover:text-blue-600 px-3 py-5">
                                     Adicionar parte
                                     <img
                                         src="src/assets/people_add.svg"

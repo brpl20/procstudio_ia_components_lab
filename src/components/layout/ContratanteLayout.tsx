@@ -51,11 +51,11 @@ function ContratanteLayout() {
                     <div className="mb-8">
                         <h2 className="text-gray-500 font-bold mb-4">Parte Contratante</h2>
 
-                        <Tabs defaultValue="pessoa-fisica" className="mb-6">
-                            <TabsList className="w-full grid grid-cols-2 mb-6">
+                        <Tabs defaultValue="pessoa-fisica" className="mb-6 relative">
+                            <TabsList className='border-b-2 border-gray-200 mb-4'>
                                 <TabsTrigger
                                     value="pessoa-fisica"
-                                    className="data-[state=active]:border-b-2 data-[state=active]:border-blue-500"
+                                    className="data-[state=active]:border-b-2 data-[state=active]:border-blue-500 mr-6"
                                 >
                                     Pessoa física
                                 </TabsTrigger>
@@ -67,7 +67,7 @@ function ContratanteLayout() {
                             {/* Pessoa Física */}
                             <TabsContent value="pessoa-fisica" className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:col-span-2">
-                                    <div className="flex flex-col items-center justify-center p-8 border rounded-lg bg-gray-50">
+                                    <div className="flex flex-col items-center justify-center p-8 border rounded-lg">
                                         <div className="mb-2">
                                             <img
                                                 src="src/assets/upload_icon.svg"
@@ -81,7 +81,7 @@ function ContratanteLayout() {
                                         <Button className="bg-[#0277EE] hover:bg-blue-600">Selecionar arquivo</Button>
                                     </div>
 
-                                    <div className="flex flex-col items-center justify-center p-8 border rounded-lg bg-gray-50">
+                                    <div className="flex flex-col items-center justify-center p-8 border rounded-lg">
                                         <div className="mb-2">
                                             <img
                                                 src="src/assets/upload_icon.svg"
@@ -258,7 +258,7 @@ function ContratanteLayout() {
 
                             {/* Pessoa Jurídica */}
                             <TabsContent value="pessoa-juridica" className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div className="flex flex-col items-center justify-center p-8 border rounded-lg bg-gray-50">
+                                <div className="flex flex-col items-center justify-center p-8 border rounded-lg">
                                     <div className="mb-2">
                                         <img
                                             src="src/assets/upload_icon.svg"

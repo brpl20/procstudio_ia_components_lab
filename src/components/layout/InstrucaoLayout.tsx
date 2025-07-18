@@ -9,7 +9,7 @@ function InstrucaoLayout() {
 
     return (
         <div className="border rounded-lg overflow-hidden bg-white">
-            <div className="p-4 border-b">
+            <div className="p-4">
                 <div
                     className="flex justify-between items-center cursor-pointer"
                     onClick={() => setInstructionsExpanded(!instructionsExpanded)}
@@ -21,7 +21,7 @@ function InstrucaoLayout() {
                             width={24}
                             height={24}
                         />
-                        <span className="text-gray-500 font-medium">Instruções para a geração</span>
+                        <span className="text-gray-500 font-medium">Instruções para a geração <span className='text-[#FC3C32]'>*</span></span>
                         <a className="instrucao">
                             <img
                                 src="src/assets/info_icon.svg"
@@ -31,14 +31,14 @@ function InstrucaoLayout() {
                             />
                         </a>
                         <Tooltip anchorSelect=".instrucao" place="top">
-                            
+                            Descreva aqui o que o contrato deve conter. Inclua cláusulas, exigências ou qualquer detalhe importante. A IA usará essas informações para gerar o contrato.
                         </Tooltip>
                     </div>
                     <ChevronUp className={`text-gray-500 transition-transform ${instructionsExpanded ? '' : 'rotate-180'}`} />
                 </div>
 
                 {instructionsExpanded && (
-                    <div className="mt-4">
+                    <div className="mt-4 p-4 border-t-[1px] border-[#EDEDED] bg-[#FEFEFA]">
                         <div className="space-y-4">
                             <div>
                                 <Label htmlFor="instrucoes">Instruções</Label>
